@@ -46,8 +46,11 @@
 
       .logo { 
         width: 180px; 
-        margin-bottom: 12px; 
-        mix-blend-mode: screen; 
+        margin-bottom: 12px;
+        /* കറുത്ത പശ്ചാത്തലമുള്ളതുകൊണ്ട് screen ഉപയോഗിച്ചപ്പോൾ അത് കാണാതായി. 
+           അതുകൊണ്ട് mix-blend-mode നീക്കം ചെയ്യുകയോ multiply ഉപയോഗിക്കുകയോ ചെയ്യാം.
+           നിങ്ങളുടെ ലോഗോയുടെ പശ്ചാത്തലം കറുത്തതാണെങ്കിൽ mix-blend-mode: multiply; ഉപയോഗിക്കുന്നത് പരീക്ഷിച്ച് നോക്കാവുന്നതാണ്. */
+        /* mix-blend-mode: multiply; */ 
       }
       
       .title { 
